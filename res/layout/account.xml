@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/pagebackground"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/account_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/account_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:singleLine="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/account_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/account_password_confirm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="password confirm"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:ems="10" />
+	
+    <LinearLayout 
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        >
+	    <Button
+	        android:id="@+id/btn_account"
+	        android:layout_width="100dp"
+	        android:layout_height="40dp"
+	        android:onClick="mOnClick"
+	        android:background="@drawable/joinus"
+	        android:text=" " />
+	</LinearLayout>
+</LinearLayout>

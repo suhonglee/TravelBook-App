@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/book_row_item_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+    >
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+			    android:layout_margin="5dp"
+		        android:orientation="vertical" >
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		       	>
+			        <ImageView
+				        android:id="@+id/detail_review_writer_icon"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:scaleType="centerCrop"
+				    />
+				    <com.facebook.widget.ProfilePictureView
+		                android:id="@+id/facebook_review_pic"
+		                android:layout_height="wrap_content"
+		                android:layout_width="50dp"
+		                app:preset_size="small"
+		                app:is_cropped="true"
+		                android:visibility="gone"
+		                />
+				     <LinearLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical" >
+				        <TextView
+				            android:id="@+id/txt_detail_name"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_margin="2dp"
+				            android:text="ㅇㅇㅇ"
+				            android:textColor="#5D5D5D"
+				            android:textSize="15sp" />
+				        <TextView
+				            android:id="@+id/txt_detail_time"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_margin="2dp"
+				            android:text="ㅇㅇㅇ"
+				            android:textColor="#747474"
+				        	android:textSize="13sp" />
+				    </LinearLayout>
+				    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+	        <LinearLayout
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="15dp"
+	            android:layout_alignParentRight="true"
+	         >
+		        <ImageView 
+		            android:src="@drawable/btn_delete"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:id="@+id/btn_detail_delete"
+		            android:visibility="invisible"
+		            />
+		        <ImageView
+		            android:src="@drawable/location_place"
+		            android:id="@+id/btn_location_place"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            ></ImageView>
+		    </LinearLayout>
+	    </RelativeLayout>
+			   </LinearLayout>
+		    </LinearLayout>
+		    <RelativeLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+				<com.travelbook.customview.ImgSlide 
+		   		    android:id="@+id/detail_review_img_list"
+		   		    android:layout_width="match_parent"
+		   		    android:layout_height="wrap_content">
+				</com.travelbook.customview.ImgSlide>
+				<ImageView
+				    android:id="@+id/detail_review_play_img"
+				    android:layout_width="50dp"
+				    android:layout_height="50dp"
+				    android:layout_centerHorizontal="true"
+				    android:layout_centerVertical="true"
+				    android:src="@drawable/play_button"
+				    android:visibility="gone" 
+				    />
+		    </RelativeLayout>
+		
+		   <TextView
+	          android:id="@+id/txt_detail_review"
+	          android:layout_marginTop="30dp"
+	          android:layout_margin="15dp"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="ffffffffffffffff" />
+	</LinearLayout>
+		    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+
+		    <EditText
+		        android:id="@+id/review_comment_txt"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="4"
+		        android:textSize="20sp"
+		        android:ems="10" >
+
+		    </EditText>
+
+		    <Button
+		        android:id="@+id/review_comment_submit"
+		        android:layout_marginLeft="5dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn_send"
+		        android:onClick="mOnClick"
+		        />
+		</LinearLayout>
+
+</LinearLayout>

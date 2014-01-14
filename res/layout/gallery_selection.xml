@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gallery_seletion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bottom_only"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:text="camera" />
+
+    <Button
+        android:id="@+id/gallery_single"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bottom_only"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:text="gallery(single)" />
+	
+    <Button
+        android:id="@+id/gallery_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bottom_only"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:text="gallery(multi)" />
+        
+    <Button
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bottom_only"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:text="video" />
+    
+    <Button
+        android:id="@+id/gallery_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_bottom_only"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:text="gallery(video)" />
+
+</LinearLayout>

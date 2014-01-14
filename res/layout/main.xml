@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    		  xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/main_background"
+              android:layout_gravity="center_vertical"
+              android:orientation="vertical"
+              >
+    <LinearLayout 
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <com.travelbook.customview.LoginButton
+	        android:id="@+id/btn_travelbook_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:onClick="mOnClick"
+	        />
+	    <com.travelbook.customview.FacebookLoginButton
+	        android:id="@+id/btn_facebook_login"
+	        android:onClick="mOnClick"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/btn_login_facebook"
+	        />
+	</LinearLayout>
+
+</RelativeLayout>

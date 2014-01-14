@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <Button 
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:id="@+id/btn_edit_image"
+        android:text="Edit image"
+    />
+    <Button 
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:id="@+id/btn_delete_image"
+        android:text="Delete image"
+    />
+
+</LinearLayout>
